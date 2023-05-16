@@ -54,11 +54,12 @@ body{
 
 .view-icon{
   position: absolute;
+  width: 5.5%;
   opacity: 0;
 }
 
 .img--container:hover .overlay {
-  opacity: .3;
+  opacity: .5;
   cursor: pointer;
 }
 
