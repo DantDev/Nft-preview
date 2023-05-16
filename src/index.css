@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit';
+}
+
+body{
+  background: hsl(217, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.container{
+  width: 260px;
+  height: 450px;
+  background: hsl(216, 50%, 16%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.img--container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card--img{
+  width: 230px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(178, 100%, 50%);
+  border-radius: 10px;
+  position: absolute;
+  top: 120px;
+  width: 230px;
+  height: 230px;
+  transition: .3s ease;
+  opacity: 0;
+}
+
+.view-icon{
+  position: absolute;
+  opacity: 0;
+}
+
+.img--container:hover .overlay {
+  opacity: .3;
+  cursor: pointer;
+}
+
+.img--container:hover .view-icon{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card--info{
+  padding: 20px 25px;
+}
+
+.card--title{
+  font-size: 1em;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 10px;
+  transition: .3s ease;
+  cursor: pointer;
+}
+.card--title:hover{
+  color: hsl(178, 100%, 50%) ;
+}
+
+.card--text{
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: .8em;
+  margin-bottom: 15px;
+}
+
+.card--value-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.eth-container{
+  display: flex;
+}
+
+.eth-value{
+  color: hsl(178, 100%, 50%);
+  font-size: .8em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.eth-icon{
+  height: 80%;
+  margin-right: 5px;
+}
+
+.time-container{
+  display: flex;
+}
+
+.time-icon{
+  height: 80%;
+  margin-right: 5px;
+}
+
+.time-text{
+  color: hsl(215, 51%, 70%);
+  font-size: .8em;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+hr{
+ border-top: hsl(215, 51%, 70%) solid 1px;
+ border-bottom: none;
+ opacity: 0.2;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+
+.user--container{
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.user--img{
+  width: 25px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user--text{
+  font-size: .8em;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  padding-top: 3px;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.user--text strong{
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+.user--text:hover strong{
+  color: hsl(178, 100%, 50%);
+}
